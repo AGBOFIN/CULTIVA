@@ -7,7 +7,6 @@ import HowItWorks from "@/components/how-it-works";
 import Statistics from "@/components/statistics";
 import Roadmap from "@/components/roadmap";
 import Team from "@/components/team";
-import Testimonials from "@/components/testimonials";
 import FAQ from "@/components/faq";
 import Contact from "@/components/contact";
 import CTA from "@/components/cta";
@@ -25,7 +24,6 @@ export default function Home() {
       <Statistics />
       <Roadmap />
       <Team />
-      <Testimonials />
       <FAQ />
       <Contact />
       <CTA />

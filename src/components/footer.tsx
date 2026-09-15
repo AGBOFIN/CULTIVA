@@ -16,7 +16,6 @@ export default function Footer() {
     equipe: [
       { name: "L'équipe", href: "#team" },
       { name: "À propos", href: "#about" },
-      { name: "Témoignages", href: "#testimonials" },
       { name: "FAQ", href: "#faq" },
     ],
     support: [
