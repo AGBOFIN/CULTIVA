@@ -1,8 +1,10 @@
 "use client";
 
 import { AnimatePresence, motion } from "framer-motion";
+import { X } from "lucide-react";
 import { Logo } from "./logo";
 import { NavList } from "./nav-list";
+import { mobileDrawerNav } from "./nav-items";
 
 export function Drawer({
   open,
@@ -33,10 +35,18 @@ export function Drawer({
             role="dialog"
             aria-label="Menu de navigation"
           >
-            <div className="p-5 border-b border-white/10">
+            <div className="flex items-center justify-between p-5 border-b border-white/10">
               <Logo dark />
+              <button
+                type="button"
+                onClick={onClose}
+                aria-label="Fermer le menu"
+                className="rounded-lg p-2 text-white/70 transition-colors hover:bg-white/10 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white"
+              >
+                <X className="h-5 w-5" aria-hidden="true" />
+              </button>
             </div>
-            <NavList onNavigate={onClose} />
+            <NavList items={mobileDrawerNav} onNavigate={onClose} />
           </motion.aside>
         </>
       )}

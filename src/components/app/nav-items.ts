@@ -10,6 +10,7 @@ import {
   Wallet,
   Wheat,
   CloudSun,
+  Menu,
 } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 
@@ -32,3 +33,17 @@ export const mainNav: NavItem[] = [
   { label: "Notifications", href: "/notifications", icon: Bell },
   { label: "Profil", href: "/profile", icon: UserRound },
 ];
+
+/** Destinations fréquentes dans la barre basse sur mobile. */
+export const mobileBottomNav: NavItem[] = [
+  mainNav[0],
+  mainNav[1],
+  mainNav[2],
+  mainNav[4],
+  { label: "Menu", href: "#menu", icon: Menu },
+];
+
+/** Modules secondaires, accessibles depuis le menu hamburger sur mobile. */
+export const mobileDrawerNav: NavItem[] = mainNav.filter(
+  (item) => !mobileBottomNav.some((bottomItem) => bottomItem.href === item.href) && item.href !== "/notifications"
+);

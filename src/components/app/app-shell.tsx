@@ -8,6 +8,7 @@ import { FullScreenLoader } from "@/components/ui/spinner";
 import { Sidebar } from "./sidebar";
 import { TopBar } from "./topbar";
 import { Drawer } from "./drawer";
+import { BottomNavigation } from "./bottom-navigation";
 
 export function AppShell({ children }: { children: ReactNode }) {
   const { user, loading } = useAuth();
@@ -25,15 +26,16 @@ export function AppShell({ children }: { children: ReactNode }) {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-[100dvh] bg-gray-50">
       <Sidebar />
       <div className="lg:pl-64">
         <TopBar onMenuClick={() => setDrawerOpen(true)} />
-        <main className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-6 lg:py-10">
+        <main className="mx-auto max-w-6xl px-4 py-6 pb-[calc(6rem+env(safe-area-inset-bottom))] sm:px-6 lg:px-8 lg:py-10">
           {children}
         </main>
       </div>
       <Drawer open={drawerOpen} onClose={() => setDrawerOpen(false)} />
+      <BottomNavigation onMenuClick={() => setDrawerOpen(true)} />
     </div>
   );
 }

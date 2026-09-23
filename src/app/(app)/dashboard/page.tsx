@@ -43,7 +43,7 @@ export default function DashboardPage() {
       {/* En-tête */}
       <div>
         <h1 className="text-2xl sm:text-3xl font-bold text-gray-900">
-          Bonjour, {firstName} 👋
+          Bonjour, {firstName}
         </h1>
         <p className="text-gray-500 mt-1 capitalize">{todayLabel}</p>
 

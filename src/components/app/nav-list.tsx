@@ -8,8 +8,15 @@ import { useUnreadCount } from "@/hooks/use-unread-count";
 import { initials } from "@/lib/format";
 import { cn } from "@/lib/utils";
 import { mainNav } from "./nav-items";
+import type { NavItem } from "./nav-items";
 
-export function NavList({ onNavigate }: { onNavigate?: () => void }) {
+export function NavList({
+  onNavigate,
+  items = mainNav,
+}: {
+  onNavigate?: () => void;
+  items?: NavItem[];
+}) {
   const pathname = usePathname();
   const { user, logout } = useAuth();
   const unreadCount = useUnreadCount();
@@ -17,7 +24,7 @@ export function NavList({ onNavigate }: { onNavigate?: () => void }) {
   return (
     <div className="flex flex-col h-full">
       <nav className="flex-1 overflow-y-auto p-3 space-y-1" aria-label="Navigation principale">
-        {mainNav.map((item) => {
+        {items.map((item) => {
           const active = pathname === item.href;
           return (
             <Link
