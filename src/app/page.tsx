@@ -6,7 +6,6 @@ import WhyCultiva from "@/components/why-cultiva";
 import HowItWorks from "@/components/how-it-works";
 import Statistics from "@/components/statistics";
 import Roadmap from "@/components/roadmap";
-import Team from "@/components/team";
 import FAQ from "@/components/faq";
 import Contact from "@/components/contact";
 import CTA from "@/components/cta";
@@ -23,7 +22,6 @@ export default function Home() {
       <HowItWorks />
       <Statistics />
       <Roadmap />
-      <Team />
       <FAQ />
       <Contact />
       <CTA />

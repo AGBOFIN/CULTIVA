@@ -10,7 +10,6 @@ const navItems = [
   { name: "Accueil", href: "#hero" },
   { name: "Fonctionnalités", href: "#features" },
   { name: "Application", href: "#app" },
-  { name: "Équipe", href: "#team" },
   { name: "FAQ", href: "#faq" },
   { name: "Contact", href: "#contact" },
 ];

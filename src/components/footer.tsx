@@ -13,15 +13,11 @@ export default function Footer() {
       { name: "Comment ça marche", href: "#how-it-works" },
       { name: "Feuille de route", href: "#roadmap" },
     ],
-    equipe: [
-      { name: "L'équipe", href: "#team" },
-      { name: "À propos", href: "#about" },
-      { name: "FAQ", href: "#faq" },
-    ],
     support: [
       { name: "Lancer l'application", href: "/login" },
       { name: "Créer un compte", href: "/register" },
       { name: "Contact", href: "#contact" },
+      { name: "FAQ", href: "#faq" },
     ],
   };
 
@@ -45,7 +41,7 @@ export default function Footer() {
       />
 
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-16 pb-10">
-        <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-10 lg:gap-8 mb-12">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8 mb-12">
           {/* Logo & description */}
           <div className="lg:col-span-2">
             <div className="mb-5">
@@ -83,24 +79,6 @@ export default function Footer() {
             </h3>
             <ul className="space-y-3">
               {footerLinks.produit.map((link) => (
-                <li key={link.name}>
-                  <a
-                    href={link.href}
-                    className="text-gray-400 hover:text-cultiva-yellow transition-colors text-sm"
-                  >
-                    {link.name}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          <div>
-            <h3 className="font-display font-bold text-sm uppercase tracking-widest text-white/90 mb-5">
-              Équipe
-            </h3>
-            <ul className="space-y-3">
-              {footerLinks.equipe.map((link) => (
                 <li key={link.name}>
                   <a
                     href={link.href}
