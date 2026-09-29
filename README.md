@@ -13,7 +13,7 @@ Le design utilise une identité visuelle premium inspirée des sites SaaS modern
 
 ## 🛠 Technologies
 
-- **Next.js 15** (App Router)
+- **Next.js 16.2.10** (App Router)
 - **React 19**
 - **TypeScript**
 - **Tailwind CSS**
@@ -50,7 +50,7 @@ cultura-landing/
 │   │       ├── notifications/   # Notifications
 │   │       └── profile/         # Profil utilisateur
 │   ├── components/
-│   │   ├── navbar.tsx, hero.tsx, …  # Composants de la landing
+│   │   ├── navbar.tsx, hero.tsx, …  # Composants de la landing (sans team section)
 │   │   ├── ui/                  # Primitives (Button, Card, Input, Badge, Spinner, ConfirmDialog)
 │   │   └── app/                 # Shell applicatif + composants par module
 │   ├── lib/                     # Utilitaires (cn, format, labels, id, client, db, api)
@@ -85,7 +85,7 @@ cultura-landing/
 
 1. **Naviguer vers le dossier du projet**
    ```bash
-   cd c:\Users\Moses\Desktop\Moses\cultura-landing
+   cd C:\Users\Moses\Desktop\CULTIVA
    ```
 
 2. **Installer les dépendances**
@@ -117,6 +117,7 @@ cultura-landing/
 - Navigation responsive (desktop/mobile)
 - Effet blur au scroll
 - Menu hamburger pour mobile
+- Liens: Accueil, Fonctionnalités, Application, FAQ, Contact
 
 ### 2. Hero Section
 - Titre principal accrocheur
@@ -125,10 +126,10 @@ cultura-landing/
 - Mockup de smartphone animé
 - Statistiques rapides
 
-### 3. Pourquoi CULTIVA ?
-- Présentation des problèmes actuels
-- Solutions proposées par CULTIVA
-- Design comparatif visuel
+### 3. Aperçu de l'application
+- Galerie de 5 cartes
+- Mockups colorés
+- Hover effects
 
 ### 4. Fonctionnalités
 - Grille de 10 cartes modernes
@@ -136,46 +137,45 @@ cultura-landing/
 - Animations au hover
 - Badge "Bientôt" pour fonctionnalités futures
 
-### 5. Comment ça marche
+### 5. Pourquoi CULTIVA ?
+- Présentation des problèmes actuels
+- Solutions proposées par CULTIVA
+- Design comparatif visuel
+
+### 6. Comment ça marche
 - Timeline en 6 étapes
 - Design visuel clair
 - Animations d'apparition
 
-### 6. Statistiques
+### 7. Statistiques
 - Compteurs animés
 - 3 statistiques clés
 - Design premium sur fond vert
-
-### 7. Aperçu de l'application
-- Galerie de 5 cartes
-- Mockups colorés
-- Hover effects
 
 ### 8. Roadmap
 - 5 versions futures
 - Indicateur de disponibilité
 - Tags de fonctionnalités
 
-### 9. Témoignages
-- 3 cartes de témoignages
-- Avatars avec initiales
-- Note étoilée
-- Indication "fictif pour démonstration"
-
-### 10. FAQ
+### 9. FAQ
 - Accordéon interactif
 - 5 questions fréquentes
 - Animations fluides
 
-### 11. Contact
+### 10. Contact
 - Formulaire complet
 - Informations de contact
 - Placeholder Google Maps
 - Design responsive
 
+### 11. CTA Section
+- Section d'appel à l'action
+- Design motivant
+- Boutons d'inscription
+
 ### 12. Footer
 - Logo et description
-- Liens organisés par catégorie
+- Liens organisés par catégorie (Produit, Support)
 - Réseaux sociaux (placeholders)
 - Copyright dynamique
 
@@ -231,6 +231,10 @@ Le site est optimisé pour :
    — défini dans `package.json` (`engines`). Vercel le détecte automatiquement.
 3. **Build** : aucune configuration nécessaire (`npm run build`, framework Next.js).
 
+**Déploiement actuel:**
+- 🌐 Production: https://cultivagestion.vercel.app
+- 📦 GitHub: https://github.com/AGBOFIN/CULTIVA
+
 ```bash
 npm install -g vercel
 vercel
@@ -262,6 +266,11 @@ vercel
 - Les composants sont modulaires et réutilisables
 - Les animations Framer Motion sont optimisées pour la performance
 - Le code est commenté pour une maintenance facile
+- **Dernières modifications** (Septembre 2026):
+  - Suppression de la section équipe de la landing page
+  - Mise à jour de la navigation et du footer
+  - Optimisation de la structure du projet
+  - Mise à jour vers Next.js 16.2.10
 
 ## 🚀 Application
 
@@ -310,7 +319,10 @@ Ce projet est développé pour MOSES EMPIRE.
 
 ## 👥 Contact
 
-Pour toute question ou suggestion concernant le projet CULTIVA, veuillez contacter l'équipe de développement.
+Pour toute question ou suggestion concernant le projet CULTIVA, vous pouvez:
+- Visiter le site: https://cultivagestion.vercel.app
+- Contacter via le formulaire de contact sur la landing page
+- Consulter le dépôt GitHub: https://github.com/AGBOFIN/CULTIVA
 
 ---
 
